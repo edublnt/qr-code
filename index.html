@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | QR code component</title>
+  
+  <style>
+    body {
+      background:hsl(212, 45%, 89%);
+      margin: 100px;
+    }
+
+    section {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .card{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: 320px;
+      width: 200px;
+      position: absolute;
+      overflow: hidden;
+      border-radius: 10px;
+      
+      background: hsl(0, 0%, 100%);
+      
+    }
+
+    .card img {
+      align-self: center;
+      position: relative;
+      border-radius: 10px;
+
+      top: 10px;
+      width: 180px;
+      height: auto;
+    }
+
+    .card p {
+      position: relative;
+      top: -5px;
+      margin: 15px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      color: hsl(220, 15%, 55%);
+    }
+
+    .card p:nth-child(2){
+      top: 10px;
+      position: relative;
+      color: black;
+
+    }
+
+    .card p:nth-child(3){
+      position: relative;
+      font-size: 10px;
+    }
+     
+  </style>
+</head>
+<body>
+  <section>
+    <div class="card">
+      <img src="/images/image-qr-code.png" alt="">
+      <p>Improve your front-end skills by building projects</p>
+
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  
+    </div>  
+  </section>
+</body>
+</html>
